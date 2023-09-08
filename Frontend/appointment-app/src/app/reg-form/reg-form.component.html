@@ -1,0 +1,13 @@
+<div>
+  <label for="">Name</label>
+  <input type="text" #nameInput >
+</div>
+<div>
+  <label for="">Email</label>
+  <input type="email" #emailInput>
+</div>
+<div>
+  <label for="">Date</label>
+  <input type="date" #dateInput>
+</div>
+<button id="regButton" (click)="onClick(nameInput.value, emailInput.value, dateInput.value)">Register</button>
